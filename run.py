@@ -1,11 +1,11 @@
-from functions.basic_functions import draw_number
+from functions.draw_number import draw_number
 
 if __name__ == '__main__':
-    start = 1
-    end = 100
-    drawn_number = draw_number(start=1, end=100)
+    START = 1
+    END = 100
+    drawn_number = draw_number(start=START, end=END)
     while True:
-        user_number = input(f"Guess the number between {start} and {end} : ")
+        user_number = input(f"Guess the number between {START} and {END} : ")
         try:
             user_number = int(user_number)
         except ValueError:
